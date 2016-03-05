@@ -153,13 +153,13 @@ void menu_settings()
 	//Zeile = 0;	// Startzeile
 	ucg.clearScreen();
 	ucg.setPrintPos(10, 15); 	ucg.print(" >>>>> 1-30 MHz <<<<<");
-	ucg.setPrintPos(10, 40);	ucg.print("80m:   3500 - 4000 kHz");
-	ucg.setPrintPos(10, 65);	ucg.print("40m:   7000 - 7500 kHz");
-	ucg.setPrintPos(10, 90);	ucg.print("30m: 10000 - 10200 kHz");
+	ucg.setPrintPos(10, 40);	ucg.print("80m:   3000 - 4500 kHz");
+	ucg.setPrintPos(10, 65);	ucg.print("40m:   6500 - 8000 kHz");
+	ucg.setPrintPos(10, 90);	ucg.print("30m: 9500 - 10500 kHz");
 	ucg.setPrintPos(10, 115);	ucg.print("20m: 13000 - 15000 kHz");
-	ucg.setPrintPos(10, 140);	ucg.print("17m: 18000 - 18200 kHz");
-	ucg.setPrintPos(10, 165);	ucg.print("15m: 21000 - 21500 kHz");
-	ucg.setPrintPos(10, 190);	ucg.print("10m: 28000 - 30000 kHz");
+	ucg.setPrintPos(10, 140);	ucg.print("17m: 17500 - 18500 kHz");
+	ucg.setPrintPos(10, 165);	ucg.print("15m: 20500 - 22000 kHz");
+	ucg.setPrintPos(10, 190);	ucg.print("10m: 27500 - 30500 kHz");
 	ucg.setPrintPos(10, 215);	ucg.print("Extras");
 	setMarker(Zeile_MSettings);
 }
@@ -482,13 +482,13 @@ void singleclick()
 	case Menu1: {
 		switch (Zeile_MSettings) {
 		case 0: perform_sweep(1, 30); break;
-		case 1: perform_sweep(3.5, 4); break;
-		case 2: perform_sweep(7, 7.5); break;
-		case 3: perform_sweep(10, 10.2); break;
+		case 1: perform_sweep(3, 4.5); break;
+		case 2: perform_sweep(6.5, 8); break;
+		case 3: perform_sweep(9.5, 10.5); break;
 		case 4: perform_sweep(13, 15); break;
-		case 5: perform_sweep(18, 18.2); break;
-		case 6: perform_sweep(21, 21.5); break;
-		case 7: perform_sweep(28, 30); break;
+		case 5: perform_sweep(17.5, 18.5); break;
+		case 6: perform_sweep(20.5, 22); break;
+		case 7: perform_sweep(27.5, 30.5); break;
 		case 8: break;
 		default: break;}
 	}; break;
