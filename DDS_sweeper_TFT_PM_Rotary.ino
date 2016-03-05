@@ -473,7 +473,7 @@ void minSweep() {
 	//Freq2 = x;				// Unterste Zeile Display Freq. Mitte
 	//Freq3 = Fstop_MHz;      // Unterste Zeile Display Freq. Rechts
 
-	perform_sweep(Fstart_MHz, Fstop_MHz);
+	perform_sweep(Fstart_MHz, Fstop_MHz); // Sweep starten
 }
 
 void singleclick()
